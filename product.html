@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/design.js"></script>
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body onload="getProductDetails()">
+    <div class="product_wrapper">
+        
+        <div class="product_banner">
+            <!-- <h1> Product Page </h1> -->
+            <img src="./images/boba.jpg" alt="boba icon" width="300" class="productBoba_edit">
+        </div>
+
+        
+    </div>
+    
+    <div class="form-popup" id="myForm">
+        <form action="js/design.js" class="form-container">
+            <h1> Select Method of Delivery </h1>
+
+            <select id="">
+                <option value="In-Store"> In-Store </option>
+                <option value="OnlineDelivery"> Online Pick-Up</option>
+            </select>
+
+            <button type="button" onclick="order_notif()"> Order </button>
+            <button type="button" onclick="closeForm()"> Close </button>
+        </form>
+    </div>
+    
+</body>
+</html>

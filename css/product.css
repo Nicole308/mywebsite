@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-color: #FEFAE0;
+}
+
+.product_wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #DDA15E;
+}
+
+.product_banner{
+    padding-top: 3vh;
+    width: 100vw;
+    /* height: 100vw; */
+    background-color: #DDA15E;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.product_banner > h1 {
+    margin-bottom: 0;
+}
+
+.BobaTitle{
+    background-color: #DDA15E;
+    width: 100vw;
+}
+
+.BobaTitle > h2 {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.BobaContent{
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.back_btn{
+    width: 15vw;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 2%;
+    background-color: #606C38;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FEFAE0;
+    font-weight: bold;
+}
+
+.order_btn{
+    width: 15vw;
+    height: 5vh;
+    margin-top: 3vh;
+    margin-left: 2%;
+    background-color: #606C38;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FEFAE0;
+    font-weight: bold;
+
+}
+
+button{
+    align-items: center;
+}
+
+.productBoba_edit{
+    background-color: white;
+    border: 7px outset #BC6C25;
+}
+
+.form-popup{
+    display: none;
+    position: fixed;
+    bottom: 10vh;
+    right: 15px;
+    /* border: 3px solid #f1f1f1; */
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300vw;
+    padding: 10px;
+    /* background-color: #606C38; */
+    background-color: #283618;
+    border-radius: 1vw;
+    padding-bottom: 6vh;
+    padding-top: 6vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.form-container > select {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 20vw;
+}
+
+.form-container > button {
+    /* background-color: #283618; */
+    background-color: #606C38;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1vw;
+    width: 10vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}

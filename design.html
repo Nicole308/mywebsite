@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/design.css">
+    <script src="js/design.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="design_wrapper">
+        <div class="navigation_panel">
+            <a href="./homepage.html"> HOME </a>
+            <a href="./design.html"> CREATE </a>
+
+            <!-- <button onclick="clearItems()"> CLEAR </button> -->
+        </div>
+
+        <div class="design_banner">
+            <h3> Create Your Own Boba!</h3>
+            <img src="./images/bubble-tea.jpg" alt="bubble tea icon" width="250" height="250">
+            <input type="text" placeholder="Bubble tea name" class="nameInput" id="name" required>
+        </div>
+
+        <div class="create_form">
+            <h3> Materials </h3>
+            <select id="mat1" required>
+                <option value=""></option>
+                <option value="Matcha"> Matcha </option>
+                <option value="Banana"> Banana </option>
+                <option value="Chocolate"> Chocolate </option>
+            </select>
+            <select id="mat2">
+                <option value=""></option>
+                <option value="Matcha"> Matcha </option>
+                <option value="Banana"> Banana </option>
+                <option value="Chocolate"> Chocolate </option>
+            </select>
+
+            <h3> Adjustments </h3>
+            <select id="adjs" required>
+                <option value=""></option>
+                <option value="30% Sugar"> 30% Sugar </option>
+                <option value="50% Sugar"> 50% Sugar </option>
+                <option value="100% Sugar"> 100% Sugar </option>
+            </select>
+            
+
+            <h3> Toppings </h3>
+            <select id="top1">
+                <option value=""></option>
+                <option value="Tapioca Pearls"> Tapioca Pearls </option>
+                <option value="Grass Jelly"> Grass Jelly </option>
+                <option value="Pudding"> Pudding </option>
+            </select>
+            <select id="top2">
+                <option value=""></option>
+                <option value="Tapioca Pearls"> Tapioca Pearls </option>
+                <option value="Grass Jelly"> Grass Jelly </option>
+                <option value="Pudding"> Pudding </option>
+            </select>
+            <select id="top3">
+                <option value=""></option>
+                <option value="Tapioca Pearls"> Tapioca Pearls </option>
+                <option value="Grass Jelly"> Grass Jelly </option>
+                <option value="Pudding"> Pudding </option>
+            </select>
+
+        </div>
+
+    </div>
+    
+    <button onclick="addItem()" class="order_btn"> Order </button>
+
+</body>
+</html>

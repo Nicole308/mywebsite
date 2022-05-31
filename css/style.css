@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    background-color: #FEFAE0;
+    /* background-color: white; */
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrapper > h3 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.navigation_panel{
+    background-color: #BC6C25;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.navigation_panel > a{
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: #FEFAE0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: red;  */
+}
+
+.feature_banner{
+    width: 100vw;
+    /* height: 50vh; */
+    background-color: #DDA15E;
+    display: flex;
+    flex-direction: row; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.feature_content{
+    /* flex-direction: row; */
+    /* padding-left: 5vw; */
+    padding-right: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature_content > h3{
+    font-size: 24px;
+    
+}
+
+.feature_content > p {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.bubbletea_edit{
+    margin-left: 8vw;
+    padding-bottom: 3vh;
+    padding-top: 1vh;
+}
+
+.bobaTable{
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 3vw ;
+    margin-left: 3vw;
+}
+
+.upperContainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 6vw; */
+    /* margin-right: 6vw; */
+    justify-content: flex-start;
+}
+
+.card_container{
+    border: 7px outset #DDA15E;
+    /* border-style: outset;
+    border-color: #DDA15E; */
+    text-align: center;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 2vh;
+    background-color: white;
+    /* background-color: #FEFAE0; */
+}
+
+.card_container > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+@media all and (min-width: 600px){
+    
+}
