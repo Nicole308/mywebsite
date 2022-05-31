@@ -1,7 +1,7 @@
-var imagesArray = ["boba.jpg", "bubble-tea.jpg", "green-tea.jpg"];
+// var imagesArray = ["boba.jpg", "bubble-tea.jpg", "green-tea.jpg"];
 
-var value;
-let randomImgs;
+// var value;
+// let randomImgs;
 
 function addItem()
 {
@@ -41,31 +41,10 @@ function addItem()
         bubbleTeaStorage.push(bubbleTea);
 
         localStorage.setItem('items', JSON.stringify(bubbleTeaStorage));
+        window.location = "./index.html";
 
-    //console.log(bubbleTea.mat1);
-    // console.log(`Name: ${bubbleTea.name}
-    //              Materials: ${mat1}, ${mat2}  
-    //              Adjustments: ${adjs}
-    //              Toppings: ${top1}, ${top2}, ${top3}`);
-        //printBubbleTeas();
-        //console.log(displayImages());
     }
 
-    // console.log("Creating bubble tea");
-    // bubbleTeaStorage.push(bubbleTea);
-
-    // localStorage.setItem('items', JSON.stringify(bubbleTeaStorage));
-
-    //console.log(bubbleTea.mat1);
-    // console.log(`Name: ${bubbleTea.name}
-    //              Materials: ${mat1}, ${mat2}  
-    //              Adjustments: ${adjs}
-    //              Toppings: ${top1}, ${top2}, ${top3}`);
-    //printBubbleTeas();
-
-    // displayImages();
-    // console.log(randomImgs);
-    // localStorage.setItem('testImg', randomImgs);
 
 }
 
@@ -84,11 +63,7 @@ function printBubbleTeas()
         var a = document.createElement("a");
         a.href = "./post.html";
 
-        //var test2 = localStorage.getItem('testImg');
-
         var bubbleTea_container = document.createElement('div');
-        //var upperContainer = document.createElement('div');
-        // upperContainer.className = "test2";
 
         bubbleTea_container = bobaTable.insertRow();
         bubbleTea_container.className = "upperContainer";
@@ -100,35 +75,24 @@ function printBubbleTeas()
             nameCell.className = "card_container"; 
             nameCell.innerHTML += `<img src='./images/boba.jpg' alt='something' height='300px' onclick="getProductName('${item.name}')" value="${item.name}"><a href="./product.html"></a>`;
             nameCell.innerHTML += `<h1> ${item.name}</h1>`
-
-            // nameCell.innerHTML += `<button onclick="getProductName('${item.name}')" value="${item.name}"><a href="./product.html"> View </a>`;
             
             nameCell = bubbleTea_container.insertCell();
-            //displayImages();
-            //nameCell.innerHTML += `<img src='${test2}' alt='testing' height='150px'>`
-
-            
-
-            // nameCell = itemRow.insertCell();
-
             
         });
-        
-        
-        //displayImage('./images/bubble-tea.jpg', 'icon');
-        // boba_container.appendChild(bobaTable);
+
         document.body.appendChild(bobaTable);
         
     }
 }
 
 //This function clears the items in the table
-function clearItems()   {
-    console.log("Clear called")
-    localStorage.clear();
-    document.getElementById('bobaTable').innerHTML = "";
-    printBubbleTeas();
-}
+// FOR CLEARING THE WHOLE MENUS (LOCAL STORAGE)
+// function clearItems()   {
+//     console.log("Clear called")
+//     localStorage.clear();
+//     document.getElementById('bobaTable').innerHTML = "";
+//     printBubbleTeas();
+// }
 
 function getProductDetails()
 {
@@ -168,23 +132,15 @@ function getProductDetails()
                 
             }
             
-
-            
-            
-            // console.log(item.name);
-            // console.log(item.mat1);
         }
     });
     
-    bubbleContainer.innerHTML += `<button class='back_btn' onclick='location.href="./homepage.html"' type='button'> Cancel </button>`;
+    bubbleContainer.innerHTML += `<button class='back_btn' onclick='location.href="./index.html"' type='button'> Cancel </button>`;
     bubbleContainer.innerHTML += `<button class='order_btn' onclick='openForm()' type='button'> Order </button>`;
 
     document.body.appendChild(headerTitle);
     document.body.appendChild(bubbleContainer);
 
-    
-
-    //console.log(storedBubbleTeas);
 } 
 
 function getProductName(product)
@@ -201,8 +157,6 @@ function displayImages()
     var folder = "./images/";
     var img = Math.floor(Math.random() * imagesArray.length);
     randomImgs = folder + imagesArray[img];
-    //localStorage.setItem('imgTest', randomImgs);
-    //console.log(randomImgs);
 }
 
 function openForm()
@@ -218,5 +172,5 @@ function closeForm()
 function order_notif()
 {
     alert("Your order has been received");
-    window.location = "./homepage.html";
+    window.location = "./index.html";
 }
